@@ -33,8 +33,11 @@ jobs:
       - run: npm install -g npm@^11.15.0
       - name: Stage sdk, angular, elements (sdk first, the other two depend on it)
         run: |
+          # A prerelease (v1.2.0-beta.1) goes to the "next" dist-tag, so `npm i @clourora/sdk` keeps the stable one
+          tag=latest
+          case "$GITHUB_REF_NAME" in *-*) tag=next ;; esac
           for p in sdk angular elements; do
-            (cd "packages/$p" && npm stage publish)
+            (cd "packages/$p" && npm stage publish --tag "$tag")
           done
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

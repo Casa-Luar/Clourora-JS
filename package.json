@@ -16,7 +16,8 @@
     "test": "npm run test --workspaces",
     "typecheck": "npm run typecheck --workspaces",
     "prettier": "prettier --write .",
-    "release:check": "npm run build && npm test && npm pack --workspaces --dry-run"
+    "release:check": "npm run build && npm test && npm pack --workspaces --dry-run",
+    "version:set": "node scripts/set-version.mjs"
   },
   "devDependencies": {
     "@angular/common": "^21.2.25",

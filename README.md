@@ -113,11 +113,6 @@ npm run release:check   # build + test + what each package would publish
 
 ### Releasing
 
-Versions move together. Bump `version` in the three `packages/*/package.json` (and the `@clourora/sdk` range in the
-other two), commit, tag `vX.Y.Z` and push the tag. `.github/workflows/release.yml` checks that the tag matches, tests,
-builds and **stages** the three packages with provenance (`npm stage publish`). Nothing is public until a maintainer
-approves each staged version with 2FA, on npmjs.com or with `npm stage list` and `npm stage approve <id>`.
-
-Authentication: the `NPM_TOKEN` repository secret holds a granular token with **Read and write (stage only)** on the
-`@clourora` scope. Once the packages exist, configure trusted publishing on each one (npmjs.com → package → Settings →
-Trusted Publisher → GitHub Actions, `Casa-Luar/Clourora-JS`, `release.yml`, stage only) and delete the secret.
+Bump with `npm run version:set -- X.Y.Z`, tag `vX.Y.Z`, push the tag, then approve the staged versions with 2FA on
+npm. The full steps (version rules, commands, prereleases, fixing a bad release) are in [RELEASING.md](RELEASING.md),
+and the history is in [CHANGELOG.md](CHANGELOG.md).
