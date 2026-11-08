@@ -26,7 +26,15 @@ jobs:
             [ "$v" = "$tag" ] || { echo "packages/$p is $v, tag is $tag"; exit 1; }
           done
       - run: npm run typecheck && npm test && npm run build
-      # sdk first: the other two depend on it
-      - run: npm publish --workspace packages/sdk --workspace packages/angular --workspace packages/elements
+      # Staged publishing: CI only uploads the release; a maintainer approves it with 2FA on npmjs.com
+      # (or `npm stage list` + `npm stage approve <id>`) before anyone can install it. Works with a
+      # "Read and write (stage only)" token in NPM_TOKEN, or with trusted publishing (OIDC, no token) once
+      # each package has it configured. npm stage doesn't know workspaces, so it runs in each folder.
+      - run: npm install -g npm@^11.15.0
+      - name: Stage sdk, angular, elements (sdk first, the other two depend on it)
+        run: |
+          for p in sdk angular elements; do
+            (cd "packages/$p" && npm stage publish)
+          done
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
