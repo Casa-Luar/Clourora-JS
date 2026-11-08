@@ -1,9 +1,9 @@
 <p align="center">
   <a href="https://clourora.com">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Manbec/Clourora-JS/main/.github/assets/clourora-logo-dark.png" />
-      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Manbec/Clourora-JS/main/.github/assets/clourora-logo-light.png" />
-      <img alt="Clourora" src="https://raw.githubusercontent.com/Manbec/Clourora-JS/main/.github/assets/clourora-logo-light.png" width="360" />
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Casa-Luar/Clourora-JS/main/.github/assets/clourora-logo-dark.png" />
+      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Casa-Luar/Clourora-JS/main/.github/assets/clourora-logo-light.png" />
+      <img alt="Clourora" src="https://raw.githubusercontent.com/Casa-Luar/Clourora-JS/main/.github/assets/clourora-logo-light.png" width="360" />
     </picture>
   </a>
 </p>

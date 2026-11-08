@@ -1,9 +1,9 @@
 <p align="center">
   <a href="https://clourora.com">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Manbec/Clourora-JS/main/.github/assets/clourora-logo-dark.png" />
-      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Manbec/Clourora-JS/main/.github/assets/clourora-logo-light.png" />
-      <img alt="Clourora" src="https://raw.githubusercontent.com/Manbec/Clourora-JS/main/.github/assets/clourora-logo-light.png" width="360" />
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Casa-Luar/Clourora-JS/main/.github/assets/clourora-logo-dark.png" />
+      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Casa-Luar/Clourora-JS/main/.github/assets/clourora-logo-light.png" />
+      <img alt="Clourora" src="https://raw.githubusercontent.com/Casa-Luar/Clourora-JS/main/.github/assets/clourora-logo-light.png" width="360" />
     </picture>
   </a>
 </p>
@@ -34,7 +34,7 @@ With a bundler: `npm i @clourora/elements` and `import '@clourora/elements';` (r
 1.0 on, `@1`) to get fixes automatically without breaking changes, or an exact version such as `@0.1.0` plus an
 `integrity` hash. Other URLs: `https://unpkg.com/@clourora/elements@0.1/dist/clourora-elements.js`, or as an ES module
 `https://cdn.jsdelivr.net/npm/@clourora/elements@0.1/+esm`. More in the
-[repository README](https://github.com/Manbec/Clourora-JS#use-it-from-a-cdn).
+[repository README](https://github.com/Casa-Luar/Clourora-JS#use-it-from-a-cdn).
 
 | Attribute   |                                                                                    |
 | ----------- | ---------------------------------------------------------------------------------- |

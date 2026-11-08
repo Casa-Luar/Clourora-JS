@@ -28,11 +28,11 @@
   "homepage": "https://clourora.com",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Manbec/Clourora-JS.git",
+    "url": "git+https://github.com/Casa-Luar/Clourora-JS.git",
     "directory": "packages/angular"
   },
   "bugs": {
-    "url": "https://github.com/Manbec/Clourora-JS/issues"
+    "url": "https://github.com/Casa-Luar/Clourora-JS/issues"
   },
   "publishConfig": {
     "access": "public",

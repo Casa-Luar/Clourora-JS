@@ -120,4 +120,4 @@ approves each staged version with 2FA, on npmjs.com or with `npm stage list` and
 
 Authentication: the `NPM_TOKEN` repository secret holds a granular token with **Read and write (stage only)** on the
 `@clourora` scope. Once the packages exist, configure trusted publishing on each one (npmjs.com → package → Settings →
-Trusted Publisher → GitHub Actions, `Manbec/Clourora-JS`, `release.yml`, stage only) and delete the secret.
+Trusted Publisher → GitHub Actions, `Casa-Luar/Clourora-JS`, `release.yml`, stage only) and delete the secret.
