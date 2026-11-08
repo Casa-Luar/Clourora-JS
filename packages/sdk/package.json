@@ -1,6 +1,6 @@
 {
   "name": "@clourora/sdk",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Typed client for Clourora's public API (adoptions, more to come). No dependencies; runs in browsers, Node 20+, Deno, Bun and edge runtimes.",
   "license": "MIT",
   "type": "module",
