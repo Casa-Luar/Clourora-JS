@@ -1,0 +1,53 @@
+{
+  "name": "@clourora/elements",
+  "version": "0.1.0",
+  "description": "Clourora UI kit as web components: <clourora-adoptions> shows a business's pets for adoption on any site (plain HTML, WordPress, Wix, Angular, React).",
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": true,
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "unpkg": "./dist/clourora-elements.js",
+  "jsdelivr": "./dist/clourora-elements.js",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./cdn": "./dist/clourora-elements.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "clourora",
+    "web-components",
+    "custom-elements",
+    "adoption",
+    "ui-kit"
+  ],
+  "homepage": "https://clourora.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Manbec/Clourora-JS.git",
+    "directory": "packages/elements"
+  },
+  "bugs": {
+    "url": "https://github.com/Manbec/Clourora-JS/issues"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "dependencies": {
+    "@clourora/sdk": "^0.1.0"
+  },
+  "scripts": {
+    "build": "tsup",
+    "test": "NODE_OPTIONS=--no-experimental-webstorage vitest run",
+    "typecheck": "tsc -p tsconfig.json"
+  }
+}

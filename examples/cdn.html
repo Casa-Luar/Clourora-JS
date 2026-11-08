@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Clourora adoptions example</title>
+    <!-- After `npm run build`. On a real site: https://cdn.jsdelivr.net/npm/@clourora/elements@0.1/dist/clourora-elements.js -->
+    <script src="../packages/elements/dist/clourora-elements.js" defer></script>
+    <style>
+      body {
+        font-family: system-ui, sans-serif;
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 24px 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Adopta</h1>
+    <!-- Replace the key with one created in Clourora (My Business → Negocio → Pet adoption) -->
+    <clourora-adoptions
+      api-key="ck_pub_REPLACE"
+      base-url="http://api.datavets.loc:3000"
+      cta-href="https://wa.me/5215555555555?text=Hola, me interesa {name}"
+    ></clourora-adoptions>
+    <script>
+      document
+        .querySelector('clourora-adoptions')
+        .addEventListener('clourora-pet-select', e => console.log(e.detail.pet));
+    </script>
+  </body>
+</html>

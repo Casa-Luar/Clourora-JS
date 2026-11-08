@@ -1,0 +1,52 @@
+{
+  "name": "@clourora/angular",
+  "version": "0.1.0",
+  "description": "Angular bindings for @clourora/sdk: provideClourora(), signal resources for adoptions, HttpClient (interceptors, SSR transfer cache) under the hood.",
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": false,
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "clourora",
+    "angular",
+    "signals",
+    "adoption"
+  ],
+  "homepage": "https://clourora.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Manbec/Clourora-JS.git",
+    "directory": "packages/angular"
+  },
+  "bugs": {
+    "url": "https://github.com/Manbec/Clourora-JS/issues"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "peerDependencies": {
+    "@angular/common": ">=20.0.0 <23.0.0",
+    "@angular/core": ">=20.0.0 <23.0.0",
+    "@clourora/sdk": "^0.1.0",
+    "rxjs": "^7.4.0"
+  },
+  "scripts": {
+    "build": "tsup",
+    "test": "NODE_OPTIONS=--no-experimental-webstorage vitest run",
+    "typecheck": "tsc -p tsconfig.json"
+  }
+}

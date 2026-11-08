@@ -1,0 +1,33 @@
+{
+  "name": "clourora-js",
+  "private": true,
+  "description": "Clourora client packages: @clourora/sdk (API, browser + Node), @clourora/angular, @clourora/elements (UI kit)",
+  "type": "module",
+  "workspaces": [
+    "packages/sdk",
+    "packages/angular",
+    "packages/elements"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "test": "npm run test --workspaces",
+    "typecheck": "npm run typecheck --workspaces",
+    "prettier": "prettier --write .",
+    "release:check": "npm run build && npm test && npm pack --workspaces --dry-run"
+  },
+  "devDependencies": {
+    "@angular/common": "^21.2.25",
+    "@angular/compiler": "^21.2.25",
+    "@angular/core": "^21.2.25",
+    "@angular/platform-browser": "^21.2.25",
+    "jsdom": "^29.1.1",
+    "prettier": "^3.9.10",
+    "rxjs": "^7.8.2",
+    "tsup": "^8.5.0",
+    "typescript": "~5.9.3",
+    "vitest": "^4.1.12"
+  }
+}
