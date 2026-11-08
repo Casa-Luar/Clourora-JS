@@ -74,7 +74,7 @@ npm ([jsDelivr](https://www.jsdelivr.com) and [unpkg](https://unpkg.com)). They'
 
 | In the URL              | What the site gets                                                                                                      |
 | ----------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| `@0.1.0` (exact)        | That build forever. Cached for a long time. Updating means editing the URL.                                             |
+| `@0.1.1` (exact)        | That build forever. Cached for a long time. Updating means editing the URL.                                             |
 | `@0.1` (from 1.0: `@1`) | New releases in that range within about 12 hours: fixes arrive by themselves, never a breaking change. **Recommended.** |
 | no version              | Always the latest, including a future major with breaking changes. Don't use it on a live site.                         |
 
@@ -84,14 +84,14 @@ jsDelivr shows the `integrity` hash for each file on the package page
 
 ```html
 <script
-  src="https://cdn.jsdelivr.net/npm/@clourora/elements@0.1.0/dist/clourora-elements.js"
+  src="https://cdn.jsdelivr.net/npm/@clourora/elements@0.1.1/dist/clourora-elements.js"
   integrity="sha384-…"
   crossorigin="anonymous"
   defer
 ></script>
 ```
 
-Browse what a published version contains: `https://cdn.jsdelivr.net/npm/@clourora/elements@0.1.0/` (a file listing).
+Browse what a published version contains: `https://cdn.jsdelivr.net/npm/@clourora/elements@0.1.1/` (a file listing).
 
 ## API versions
 

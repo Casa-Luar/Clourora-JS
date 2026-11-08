@@ -31,7 +31,7 @@ The pets a business publishes for adoption in Clourora, as a responsive card gri
 With a bundler: `npm i @clourora/elements` and `import '@clourora/elements';` (registers the element).
 
 **CDN.** The `<script>` above is served by jsDelivr straight from npm, so there's nothing to host. Use `@0.1` (from
-1.0 on, `@1`) to get fixes automatically without breaking changes, or an exact version such as `@0.1.0` plus an
+1.0 on, `@1`) to get fixes automatically without breaking changes, or an exact version such as `@0.1.1` plus an
 `integrity` hash. Other URLs: `https://unpkg.com/@clourora/elements@0.1/dist/clourora-elements.js`, or as an ES module
 `https://cdn.jsdelivr.net/npm/@clourora/elements@0.1/+esm`. More in the
 [repository README](https://github.com/Casa-Luar/Clourora-JS#use-it-from-a-cdn).
